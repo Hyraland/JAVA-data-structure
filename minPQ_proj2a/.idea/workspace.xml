@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1440fb09-d362-4d4c-8847-e5e883bf3935" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../clab8/FlightSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clab8/FlightSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/ArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/ArrayRingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/GuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestArrayRingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestGuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestGuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/hw2/InteractivePercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/hw2/InteractivePercolationVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/hw2/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/hw2/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/hw2/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/hw2/PercolationStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/hw2/PercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/hw2/PercolationVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/hw3/hash/HashTableVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/hw3/hash/HashTableVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/hw3/hash/OomageTestUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/hw3/hash/OomageTestUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/hw3/hash/SimpleOomage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/hw3/hash/SimpleOomage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/hw3/hash/TestComplexOomage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/hw3/hash/TestComplexOomage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/hw3/hash/TestSimpleOomage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/hw3/hash/TestSimpleOomage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/creatures/Plip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/Plip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/huglife/SampleCreature.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/huglife/SampleCreature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/ArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/LinkedListDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/PalindromeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bearmaps/ArrayHeapMinPQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bearmaps/ArrayHeapMinPQTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bearmaps/KDTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bearmaps/KDTreeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1YPUsmtu0DWJOTP5uIienMO5VoF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.KDTreeTest.randomKDTreeNearestCheck">
+    <configuration name="ArrayHeapMinPQTest.testChangePriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2ab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.ArrayHeapMinPQTest" />
+      <option name="METHOD_NAME" value="testChangePriority" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHeapMinPQTest.testGetSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2ab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.ArrayHeapMinPQTest" />
+      <option name="METHOD_NAME" value="testGetSmallest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHeapMinPQTest.testRemoveSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2ab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.ArrayHeapMinPQTest" />
+      <option name="METHOD_NAME" value="testRemoveSmallest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KDTreeTest.randomKDTreeNearestCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2ab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.KDTreeTest" />
+      <option name="METHOD_NAME" value="randomKDTreeNearestCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KDTreeTest.simpleKDTreeNearestCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2ab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.KDTreeTest" />
+      <option name="METHOD_NAME" value="simpleKDTreeNearestCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KDTreeTest.randomKDTreeNearestCheck" />
+        <item itemvalue="JUnit.KDTreeTest.simpleKDTreeNearestCheck" />
+        <item itemvalue="JUnit.ArrayHeapMinPQTest.testChangePriority" />
+        <item itemvalue="JUnit.ArrayHeapMinPQTest.testRemoveSmallest" />
+        <item itemvalue="JUnit.ArrayHeapMinPQTest.testGetSmallest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1440fb09-d362-4d4c-8847-e5e883bf3935" name="Default Changelist" comment="" />
+      <created>1582843931906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582843931906</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1583278198883">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583278198883" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1583278198882">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583278198882" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1583278198882">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583278198882" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1583278198883">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583278198883" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1583271420032">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583271420032" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1583271420031">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1583271420031" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1583271420031">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1583271420031" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1583271420031">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1583271420031" />
+    <state width="1398" height="285" key="GridCell.Tab.2.bottom" timestamp="1583271420033">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583271420033" />
+    <state width="1398" height="285" key="GridCell.Tab.2.center" timestamp="1583271420032">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1583271420032" />
+    <state width="1398" height="285" key="GridCell.Tab.2.left" timestamp="1583271420032">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1583271420032" />
+    <state width="1398" height="285" key="GridCell.Tab.2.right" timestamp="1583271420032">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1583271420032" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1583099365322">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1583099365322" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1583106206093">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1440.877@0.23.1440.877" timestamp="1583106206093" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bearmaps/KDTreeTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
