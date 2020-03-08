@@ -44,6 +44,10 @@ public class KDTreeTest {
 
         assertEquals(newkd.nearest(coords).get(0), newnv.nearest(0,5).get(0),0.001);
         assertEquals(newkd.nearest(coords).get(1), newnv.nearest(0,5).get(1),0.001);
+        assertEquals(newkd.nearestK(coords, 1).get(0).get(0), newkd.nearest(coords).get(0),0.001);
+        assertEquals(newkd.nearestK(coords,1).get(0).get(1), newkd.nearest(coords).get(1),0.001);
+        assertEquals(newkd.nearestK(coords, 1).get(0).get(0), newnv.nearest(0,5).get(0),0.001);
+        assertEquals(newkd.nearestK(coords,1).get(0).get(1), newnv.nearest(0,5).get(1),0.001);
         coords = new ArrayList<>();
         coords.add(2.0);
         coords.add(3.0);
@@ -73,17 +77,18 @@ public class KDTreeTest {
 
         KDTree newkd = new KDTree(points);
         NaivePointSet newnv = new NaivePointSet(points);
-        coords = new ArrayList<>();
-        coords.add(0.0);
-        coords.add(5.0);
-        assertEquals(newkd.nearest(coords).get(0), newnv.nearest(0,5).get(0),0.001);
-        assertEquals(newkd.nearest(coords).get(1), newnv.nearest(0,5).get(1),0.001);
 
         coords = new ArrayList<>();
         coords.add(2.0);
         coords.add(3.0);
         assertEquals(newkd.nearest(coords).get(0), newnv.nearest(2,3).get(0),0.001);
         assertEquals(newkd.nearest(coords).get(1), newnv.nearest(2,3).get(1),0.001);
+
+        coords = new ArrayList<>();
+        coords.add(0.0);
+        coords.add(5.0);
+        assertEquals(newkd.nearestK(coords, 1).get(0).get(0), newnv.nearest(0,5).get(0),0.001);
+        assertEquals(newkd.nearestK(coords,1).get(0).get(1), newnv.nearest(0,5).get(1),0.001);
 
         coords = new ArrayList<>();
         coords.add(7.0);

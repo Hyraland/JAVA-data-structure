@@ -12,12 +12,13 @@ public class Point {
         this.dim = coords.size();
     }
 
-    public double get(int d) {
-        return coords.get(d);
+    public double get(int i) {
+        return coords.get(i);
     }
 
     public int dim() {
-        return this.dim;
+        return coords.size();
+        //return this.dim;
     }
 
     /**
@@ -34,6 +35,47 @@ public class Point {
         return totd;
     }
 
+    private static ArrayList<Double> vdist(ArrayList<Double> coords1, ArrayList<Double> coords2) {
+        int d = coords1.size();
+        ArrayList<Double> totd = new ArrayList<>(d);
+        for (int i = 0; i < d; i++) {
+            totd.add(i, coords1.get(i) - coords2.get(i));
+        }
+        return totd;
+    }
+
+    public Point add(ArrayList<Double> d) {
+        for (int i = 0; i < dim; i++) {
+            double x = this.coords.remove(i);
+            this.coords.add(i, x + d.get(i));
+        }
+        return this;
+    }
+
+    public Point add(Point d) {
+        for (int i = 0; i < dim; i++) {
+            double x = this.coords.remove(i);
+            this.coords.add(i, x + d.get(i));
+        }
+        return this;
+    }
+
+    public Point addmul(ArrayList<Double> d, double f) {
+        for (int i = 0; i < dim; i++) {
+            double x = this.coords.remove(i);
+            this.coords.add(i,x + f*d.get(i));
+        }
+        return this;
+    }
+
+    public Point addmul(Point d, double f) {
+        for (int i = 0; i < dim; i++) {
+            double x = this.coords.remove(i);
+            this.coords.add(i,x + f*d.get(i));
+        }
+        return this;
+    }
+
     /**
      * Returns the euclidean distance (L2 norm) squared between two points.
      * Note: This is the square of the Euclidean distance, i.e.
@@ -41,6 +83,10 @@ public class Point {
      */
     public static double distance(Point p1, Point p2) {
         return distance(p1.coords, p2.coords);
+    }
+
+    public static ArrayList<Double> vdist(Point p1, Point p2) {
+        return vdist(p1.coords, p2.coords);
     }
 
     @Override
