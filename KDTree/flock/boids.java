@@ -45,8 +45,10 @@ public class boids {
         KDTree knn = new KDTree(pos);
         ArrayList<Point> neis = knn.nearestK(p, k);
         for(int i = 0; i < k; i++) {
-            v.addmul(Point.vdist(neis.get(i), p), -sepfrac);
-            // v add max?
+            if (i < neis.size()) {
+                v.adddev(Point.vdist(neis.get(i), p), -sepfrac / k);
+                // v add max?
+            }
         }
         upvel(v, ind);
         //return v;
@@ -60,8 +62,10 @@ public class boids {
         KDTree knn = new KDTree(pos);
         ArrayList<Point> neis = knn.nearestK(p, k);
         for(int i = 0; i < k; i++) {
-            v.addmul(Point.vdist(neis.get(i), p), cohfrac);
-            // v add max?
+            if (i < neis.size()) {
+                v.addmul(Point.vdist(neis.get(i), p), cohfrac / k);
+                // v add max?
+            }
         }
         upvel(v, ind);
         //return v;
@@ -75,8 +79,10 @@ public class boids {
         BoidKDTree knn = new BoidKDTree(this);
         boids neis = knn.nearestK(p, k);
         for(int i = 0; i < k; i++) {
-            v.addmul(Point.vdist(neis.vel.get(i), v), alifrac);
-            // v add max?
+            if (i < neis.vel.size()) {
+                v.addmul(Point.vdist(neis.vel.get(i), v), alifrac / k);
+                // v add max?
+            }
         }
         upvel(v, ind);
         //return v;

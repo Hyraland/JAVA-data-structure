@@ -7,11 +7,11 @@ public class flockfly {
 
     public static void main(String[] args) {
         double unirad = 500;
-        int nb = 100;
+        int nb = 50;
         int k = 20;
-        double sepfrac = 0.1;
-        double cohfrac = 0.05;
-        double alifrac = 0.1;
+        double sepfrac = 20;
+        double cohfrac = 0.25;
+        double alifrac = 0.2;
         double curT = 0;
         double T = 100; // Double.valueOf(args[0]);
         double dt = 0.01; // Double.valueOf(args[1]);
@@ -43,8 +43,8 @@ public class flockfly {
         StdDraw.enableDoubleBuffering();
         while (curT <= T) {
             for (int i = 0; i < nb; i++) {
-                b.separation(k, i, sepfrac);
-                b.cohesion(k, i, cohfrac);
+                b.separation(k/2, i, sepfrac);
+                b.cohesion(k*2, i, cohfrac);
                 b.alignment(k, i, alifrac);
                 //b.upvel(b.velof(i), i);
                 b.posof(i).addmul(b.velof(i), dt);

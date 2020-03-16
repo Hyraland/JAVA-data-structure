@@ -62,16 +62,52 @@ public class Point {
 
     public Point addmul(ArrayList<Double> d, double f) {
         for (int i = 0; i < dim; i++) {
-            double x = this.coords.remove(i);
-            this.coords.add(i,x + f*d.get(i));
+            double x;
+            double y = d.get(i);
+            if (Math.abs(y) < 0.000001){continue;}
+            else{
+                x = this.coords.remove(i);
+                this.coords.add(i,x + f*y);
+            }
         }
         return this;
     }
 
     public Point addmul(Point d, double f) {
         for (int i = 0; i < dim; i++) {
-            double x = this.coords.remove(i);
-            this.coords.add(i,x + f*d.get(i));
+            double x;
+            double y = d.get(i);
+            if (Math.abs(y) < 0.000001){continue;}
+            else{
+                x = this.coords.remove(i);
+                this.coords.add(i,x + f*y);
+            }
+        }
+        return this;
+    }
+
+    public Point adddev(ArrayList<Double> d, double f) {
+        for (int i = 0; i < dim; i++) {
+            double x;
+            double y = d.get(i);
+            if (Math.abs(y) < 0.000001){continue;}
+            else{
+                x = this.coords.remove(i);
+                this.coords.add(i,x + f/y);
+            }
+        }
+        return this;
+    }
+
+    public Point adddev(Point d, double f) {
+        for (int i = 0; i < dim; i++) {
+            double x;
+            double y = d.get(i);
+            if (Math.abs(y) < 0.000001){continue;}
+            else{
+                x = this.coords.remove(i);
+                this.coords.add(i,x + f/y);
+            }
         }
         return this;
     }

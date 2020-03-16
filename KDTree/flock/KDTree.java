@@ -154,13 +154,15 @@ public class KDTree {
         KDTree cthis;
 
         for (int j = 0; j < k; j++) {
-            cthis = bests.removeSmallest();
-            cbest = new ArrayList<>();
-            for (int i = 0; i < dim; i++) {
-                cbest.add(cthis.trees.get(i));
+            if(bests.size() > 0) {
+                cthis = bests.removeSmallest();
+                cbest = new ArrayList<>();
+                for (int i = 0; i < dim; i++) {
+                    cbest.add(cthis.trees.get(i));
+                }
+                pbest = new Point(cbest);
+                cbests.add(pbest);
             }
-            pbest = new Point(cbest);
-            cbests.add(pbest);
         }
         return cbests;
     }

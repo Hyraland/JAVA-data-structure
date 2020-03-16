@@ -68,7 +68,7 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T>{
         heap.remove(0);
         pheap.remove(0);
         size -= 1;
-        if (size == 0) {
+        if(size == 0) {
             return smt;
         }
         heap.add(0, heap.get(size-1));
@@ -80,7 +80,7 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T>{
         }
         down(0);
         return smt;
-    };
+    }
 
     @Override
     public int size(){
@@ -138,12 +138,21 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T>{
         while (parent < (sizecell - 1)/2) {
             son1 = parent * 2 + 1;
             son2 = parent * 2 + 2;
-
-            if (son1 < size && pheap.get(son1) < priority) {
+            if (son1 >= size){
+                break;
+            }
+            else if(son2 >= size) {
+                if (pheap.get(son1) < priority) {
+                    swap(parent, son1);
+                    parent = son1;
+                }
+                else {break;}
+            }
+            else if (pheap.get(son1) <= pheap.get(son2) && pheap.get(son1) < priority){
                 swap(parent, son1);
                 parent = son1;
             }
-            else if (son2 < size && pheap.get(son2) < priority){
+            else if (pheap.get(son1) > pheap.get(son2) && pheap.get(son2) < priority){
                 swap(parent, son2);
                 parent = son2;
             }
@@ -152,6 +161,7 @@ public class ArrayHeapMinPQ<T> implements ExtrinsicMinPQ<T>{
             }
         }
     }
+
 
     private void up(int ind) {
         int parent = ind;

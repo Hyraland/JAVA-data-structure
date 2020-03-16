@@ -193,17 +193,19 @@ public class BoidKDTree {
         BoidKDTree cthis;
 
         for (int j = 0; j < k; j++) {
-            cthis = bests.removeSmallest();
-            cbest = new ArrayList<>();
-            vbest = new ArrayList<>();
-            for (int i = 0; i < dim; i++) {
-                cbest.add(cthis.trees.get(i));
-                vbest.add(cthis.vels.get(i));
+            if(bests.size()>0) {
+                cthis = bests.removeSmallest();
+                cbest = new ArrayList<>();
+                vbest = new ArrayList<>();
+                for (int i = 0; i < dim; i++) {
+                    cbest.add(cthis.trees.get(i));
+                    vbest.add(cthis.vels.get(i));
+                }
+                pbest = new Point(cbest);
+                pvbest = new Point(vbest);
+                cbests.add(pbest);
+                vbests.add(pvbest);
             }
-            pbest = new Point(cbest);
-            pvbest = new Point(vbest);
-            cbests.add(pbest);
-            vbests.add(pvbest);
         }
         boids b = new boids(cbests.size(), cbests, vbests);
         return b;
