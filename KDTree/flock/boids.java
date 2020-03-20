@@ -41,12 +41,19 @@ public class boids {
         Point v = velof(ind);
         Point p = posof(ind);
         int bn = size();
-        ArrayList<Double> dis = new ArrayList<>(k);
-        KDTree knn = new KDTree(pos);
-        ArrayList<Point> neis = knn.nearestK(p, k);
+
+        ArrayList<Double> vdis = new ArrayList<>(k);
+        ArrayList<Double> pdis = new ArrayList<>(k);
+
+        BoidKDTree knn = new BoidKDTree(this);
+        boids neis = knn.nearestK(p, k);
         for(int i = 0; i < k; i++) {
             if (i < neis.size()) {
-                v.adddev(Point.vdist(neis.get(i), p), -sepfrac / k);
+                vdis = Point.vdist(neis.vel.get(i), v);
+                pdis = Point.vdist(neis.pos.get(i), p);
+                if (v.mul(vdis, pdis) > 0){
+                    v.adddev(v.vmul(vdis, pdis), -sepfrac / Point.distance(neis.pos.get(i), p) / k, 0.0);
+                }
                 // v add max?
             }
         }

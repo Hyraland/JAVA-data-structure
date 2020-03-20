@@ -60,11 +60,39 @@ public class Point {
         return this;
     }
 
+    public ArrayList<Double> vmul(ArrayList<Double> d1, ArrayList<Double> d2) {
+        ArrayList<Double> d = new ArrayList<>(dim);
+        for (int i = 0; i < dim; i++) {d.add(0.0);}
+        for (int i = 0; i < dim; i++) {
+            double x = d1.get(i);
+            double y = d2.get(i);
+            if (Math.abs(y-x) < 0.0000001){break;}
+            else{
+                d.remove(i);
+                d.add(i,x * y);
+            }
+        }
+        return d;
+    }
+
+    public double mul(ArrayList<Double> d1, ArrayList<Double> d2) {
+        double d = 0;
+        for (int i = 0; i < dim; i++) {
+            double x = d1.get(i);
+            double y = d2.get(i);
+            if (Math.abs(y-x) < 0.0000001){break;}
+            else{
+                d+=x * y;
+            }
+        }
+        return d;
+    }
+
     public Point addmul(ArrayList<Double> d, double f) {
         for (int i = 0; i < dim; i++) {
             double x;
             double y = d.get(i);
-            if (Math.abs(y) < 0.000001){continue;}
+            if (Math.abs(y) < 0.0000001){break;}
             else{
                 x = this.coords.remove(i);
                 this.coords.add(i,x + f*y);
@@ -77,7 +105,7 @@ public class Point {
         for (int i = 0; i < dim; i++) {
             double x;
             double y = d.get(i);
-            if (Math.abs(y) < 0.000001){continue;}
+            if (Math.abs(y) < 0.0000001){break;}
             else{
                 x = this.coords.remove(i);
                 this.coords.add(i,x + f*y);
@@ -86,14 +114,14 @@ public class Point {
         return this;
     }
 
-    public Point adddev(ArrayList<Double> d, double f) {
+    public Point adddev(ArrayList<Double> d, double f, double mindis) {
         for (int i = 0; i < dim; i++) {
             double x;
             double y = d.get(i);
-            if (Math.abs(y) < 0.000001){continue;}
+            if (Math.abs(y) < 0.0000001){break;}
             else{
                 x = this.coords.remove(i);
-                this.coords.add(i,x + f/y);
+                this.coords.add(i,x + f/(y-mindis));
             }
         }
         return this;
@@ -103,7 +131,7 @@ public class Point {
         for (int i = 0; i < dim; i++) {
             double x;
             double y = d.get(i);
-            if (Math.abs(y) < 0.000001){continue;}
+            if (Math.abs(y) < 0.0000001){break;}
             else{
                 x = this.coords.remove(i);
                 this.coords.add(i,x + f/y);

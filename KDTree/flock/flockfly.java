@@ -2,6 +2,7 @@ package flock;
 
 import java.util.ArrayList;
 import java.util.*;
+import java.io.*;
 
 public class flockfly {
 
@@ -9,9 +10,9 @@ public class flockfly {
         double unirad = 500;
         int nb = 50;
         int k = 20;
-        double sepfrac = 20;
+        double sepfrac = 3.0;
         double cohfrac = 0.25;
-        double alifrac = 0.2;
+        double alifrac = 0.001;
         double curT = 0;
         double T = 100; // Double.valueOf(args[0]);
         double dt = 0.01; // Double.valueOf(args[1]);
@@ -43,7 +44,7 @@ public class flockfly {
         StdDraw.enableDoubleBuffering();
         while (curT <= T) {
             for (int i = 0; i < nb; i++) {
-                b.separation(k/2, i, sepfrac);
+                b.separation(1, i, sepfrac);
                 b.cohesion(k*2, i, cohfrac);
                 b.alignment(k, i, alifrac);
                 //b.upvel(b.velof(i), i);
